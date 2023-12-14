@@ -7,7 +7,7 @@ import time
 resources = [
     {"resource": "users", "url": 'http://ec2-3-144-182-9.us-east-2.compute.amazonaws.com:8012/users'},
     {"resource": "properties", "url": 'https://e6156-i-am-bezos-402423.ue.r.appspot.com/properties'},
-    {"resource": "bookings", "url": 'http://ec2-13-59-140-159.us-east-2.compute.amazonaws.com:8012/bookings'}
+    {"resource": "bookings", "url": 'http://ec2-3-144-93-114.us-east-2.compute.amazonaws.com:8012/bookings'}
 ]
 
 class Composite:
