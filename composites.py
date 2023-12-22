@@ -40,10 +40,3 @@ class Composite:
             print(f"{resource['resource']} service has returned a response (in sync)")
             results[resource["resource"]] = response.json()
         return results
-
-    def get_properties(self, params):
-        response = requests.get(resources[1]["url"], params=params)
-        if response.status_code == 200:
-            return response.json()
-        else:
-            return {"error": f"Error fetching data: {response.status_code}"}
