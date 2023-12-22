@@ -46,6 +46,14 @@ async def async_aggregator():
 async def clientType():
     return RedirectResponse(url="https://nestly6156.s3.us-east-2.amazonaws.com/composite/clienttype.html")
 
+@app.get("/host")
+async def host():
+    return RedirectResponse(url="https://nestly6156.s3.us-east-2.amazonaws.com/bookings_static/host.html")
+
+@app.get("/user")
+async def user():
+    return RedirectResponse(url="https://nestly6156.s3.us-east-2.amazonaws.com/property_static/user.html")
+
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8012)
